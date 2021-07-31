@@ -118,7 +118,7 @@ ROOT_NODE {
 		dev = "/dev/block/platform/soc/11230000.mmc/by-name/vendor";
 		type = "ext4";
 		mnt_flags = "ro";
-		fsmgr_flags = "wait,verify";
+		fsmgr_flags = "wait";
 	};
 };
 
