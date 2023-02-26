@@ -104,24 +104,6 @@ ROOT_NODE {
 	status = "okay";
 };
 
-&fstab {
-	system {
-		compatible = "android,system";
-		dev = "/dev/block/platform/soc/11230000.mmc/by-name/system";
-		type = "ext4";
-		mnt_flags = "ro";
-		fsmgr_flags = "wait,verify";
-	};
-
-	vendor {
-		compatible = "android,vendor";
-		dev = "/dev/block/platform/soc/11230000.mmc/by-name/vendor";
-		type = "ext4";
-		mnt_flags = "ro";
-		fsmgr_flags = "wait";
-	};
-};
-
 &hdmi0 {
 	pinctrl-names = "default", "hdmi_hpd", "hdmi_ddc";
 	pinctrl-0 = <&hdmi_pins_default>;
